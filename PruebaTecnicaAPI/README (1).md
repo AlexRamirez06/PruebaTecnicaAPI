@@ -48,7 +48,11 @@ PruebaTecnicaAPI.sln
 
 1. Clonar el repositorio.
 
-2. Ejecutar el script de base de datos en SQL Server Management Studio (SSMS). El script crea la base de datos `OrderManagementDB`, las tablas, los índices y los datos de prueba.
+2. No es necesario un script de la base de datos o crear una nueva, ya que esta subida a un servidor, el acceso a ella es:
+    Server: db39761.public.databaseasp.net
+    Login: db39761
+    Password: HolaAlex123
+  En la cual usted mismo puede verificar los datos insertados y listados, así como los procedimientos almacenados que se usan
 
 3. Actualizar la cadena de conexión en `appsettings.json`:
 
@@ -62,11 +66,8 @@ PruebaTecnicaAPI.sln
 
 4. Ejecutar los Stored Procedures en SSMS antes de iniciar la aplicación.
 
-5. Ejecutar el proyecto desde Visual Studio o desde la línea de comandos:
-
-```bash
-dotnet run --project PruebaTecnicaAPI
-```
+ (Pasos 3 y 4 no necesarios en caso se use la misma Base de datos, solo en caso de que se cambie a otra es necesario y no 
+  olvidar los procedimientos)
 
 ---
 
